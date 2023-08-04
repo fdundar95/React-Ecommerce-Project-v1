@@ -1,9 +1,57 @@
-import React from 'react'
-import styled from 'styled-components'
+// Mail (hurteyarde@gufum.com) : https://tempail.com/u/16/hurteyarde-babf6e2f10/
+// Password : L.9Ni~vC,SstGB!
+
+import { useForm, ValidationError } from '@formspree/react';
+import styled from 'styled-components';
 
 const Contact = () => {
-  return <h4>contact section</h4>
-}
+  const [state, handleSubmit] = useForm('myyqkobo');
+
+  if (state.succeeded) {
+    return (
+      <Wrapper>
+        <div className='section-center'>
+          <h3>Thanks for joining!</h3>
+        </div>
+      </Wrapper>
+    );
+  }
+
+  return (
+    <Wrapper>
+      <div className='section-center'>
+        <h3>Join our newsletter and get 20% off</h3>
+        <div className='content'>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+            assumenda magnam ab odio autem non magni commodi vel quas quo.
+          </p>
+          <form onSubmit={handleSubmit} className='contact-form'>
+            <input
+              id='email'
+              name='email'
+              type='email'
+              className='form-input'
+              placeholder='enter mail'
+            />
+            <ValidationError
+              prefix='Email'
+              field='email'
+              errors={state.errors}
+            />
+            <button
+              type='submit'
+              className='submit-btn'
+              disabled={state.submitting}
+            >
+              subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </Wrapper>
+  );
+};
 const Wrapper = styled.section`
   padding: 5rem 0;
   h3 {
@@ -67,6 +115,6 @@ const Wrapper = styled.section`
   @media (min-width: 1280px) {
     padding: 15rem 0;
   }
-`
+`;
 
-export default Contact
+export default Contact;

@@ -1,9 +1,51 @@
-import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { Navbar, Sidebar, Footer } from './components'
+import React from 'react';
+import {
+  Home,
+  Layout,
+  Products,
+  SingleProduct,
+  About,
+  Cart,
+  Checkout,
+  Error,
+  Private,
+} from './pages';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-function App() {
-  return <h4>comfy sloth starter</h4>
-}
-
-export default App
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout />,
+    errorElement: <Error />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: '/products',
+        element: <Products />,
+      },
+      {
+        path: '/products/:id',
+        element: <SingleProduct />,
+      },
+      {
+        path: '/about',
+        element: <About />,
+      },
+      {
+        path: '/cart',
+        element: <Cart />,
+      },
+      {
+        path: '/checkout',
+        element: <Checkout />,
+      },
+    ],
+  },
+]);
+const App = () => {
+  return <RouterProvider router={router} />;
+};
+export default App;

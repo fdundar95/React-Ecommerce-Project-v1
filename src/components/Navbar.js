@@ -1,16 +1,41 @@
-import React from 'react'
-import styled from 'styled-components'
-import logo from '../assets/logo.svg'
-import { FaBars } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
-import { links } from '../utils/constants'
-import CartButtons from './CartButtons'
-import { useProductsContext } from '../context/products_context'
-import { useUserContext } from '../context/user_context'
+import React from 'react';
+import styled from 'styled-components';
+import logo from '../assets/logo.svg';
+import { FaBars } from 'react-icons/fa';
+import { Link, NavLink } from 'react-router-dom';
+import { links } from '../utils/constants';
+import CartButtons from './CartButtons';
+import { useProductsContext } from '../context/products_context';
+import { useUserContext } from '../context/user_context';
 
 const Nav = () => {
-  return <h4>navbar</h4>
-}
+  const { openSidebar } = useProductsContext();
+  return (
+    <NavContainer>
+      <div className='nav-center'>
+        <div className='nav-header'>
+          <Link to={'/'}>
+            <img src={logo} alt='logo' />
+          </Link>
+          <button type='button' className='nav-toggle' onClick={openSidebar}>
+            <FaBars />
+          </button>
+        </div>
+        <ul className='nav-links'>
+          {links.map((link) => {
+            const { id, text, url } = link;
+            return (
+              <li key={id}>
+                <NavLink to={url}>{text}</NavLink>
+              </li>
+            );
+          })}
+        </ul>
+        <CartButtons />
+      </div>
+    </NavContainer>
+  );
+};
 
 const NavContainer = styled.nav`
   height: 5rem;
@@ -47,6 +72,11 @@ const NavContainer = styled.nav`
   .cart-btn-wrapper {
     display: none;
   }
+  .active {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
   @media (min-width: 992px) {
     .nav-toggle {
       display: none;
@@ -77,6 +107,6 @@ const NavContainer = styled.nav`
       display: grid;
     }
   }
-`
+`;
 
-export default Nav
+export default Nav;
