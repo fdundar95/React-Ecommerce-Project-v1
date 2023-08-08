@@ -73,8 +73,8 @@ const NavContainer = styled.nav`
   }
   .active {
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px var(--clr-primary-5);
+    text-shadow: 1px 1px 2px var(--clr-primary-5);
   }
   @media (min-width: 992px) {
     .nav-toggle {
