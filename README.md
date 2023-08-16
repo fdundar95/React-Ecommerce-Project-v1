@@ -12,3 +12,4 @@
 - Checkbox filtering, e.g. filtering for more than one company
 - Making add to cart button not go to cart
 - Continue shopping button using history
+- Make it independent from Auth0
