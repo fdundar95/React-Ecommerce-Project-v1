@@ -9,42 +9,34 @@ import {
   Error,
   Private,
 } from './pages';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { AuthWrapper } from './components';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Layout />,
-    errorElement: <Error />,
-    children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-      {
-        path: '/products',
-        element: <Products />,
-      },
-      {
-        path: '/products/:id',
-        element: <SingleProduct />,
-      },
-      {
-        path: '/about',
-        element: <About />,
-      },
-      {
-        path: '/cart',
-        element: <Cart />,
-      },
-      {
-        path: '/checkout',
-        element: <Checkout />,
-      },
-    ],
-  },
-]);
 const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <AuthWrapper>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' exact element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path='about' element={<About />} />
+            <Route path='cart' element={<Cart />} />
+            <Route path='products' element={<Products />} />
+            <Route path='products/:id' element={<SingleProduct />} />
+            <Route
+              path='checkout'
+              element={
+                <Private>
+                  <Checkout />
+                </Private>
+              }
+            />
+            <Route path='*' element={<Error />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </AuthWrapper>
+  );
 };
+
 export default App;

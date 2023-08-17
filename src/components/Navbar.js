@@ -33,7 +33,7 @@ const Nav = () => {
           })}
           {myUser && (
             <li>
-              <Link to={'/checkout'}>checkout</Link>
+              <NavLink to={'/checkout'}>checkout</NavLink>
             </li>
           )}
         </ul>
@@ -79,9 +79,7 @@ const NavContainer = styled.nav`
     display: none;
   }
   .active {
-    border-radius: 10px;
-    box-shadow: 0 0 10px var(--clr-primary-5);
-    text-shadow: 1px 1px 2px var(--clr-primary-5);
+    border-bottom: 4px solid var(--clr-primary-5);
   }
   @media (min-width: 992px) {
     .nav-toggle {
