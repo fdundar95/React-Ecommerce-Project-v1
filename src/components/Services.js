@@ -7,14 +7,13 @@ const Services = () => {
       <div className='section-center'>
         <article className='header'>
           <h3>
-            custom furniture
+            custom gadgets
             <br />
             built only for you
           </h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem rem
-            qui iure velit magnam. Harum, labore. Quo consequatur voluptatum
-            libero.
+            Crafting Wonders: Bespoke gadgets meticulously crafted to suit your
+            desires, at AeonArtifacts. Time meets technology in every creation.
           </p>
         </article>
         <div className='services-center'>

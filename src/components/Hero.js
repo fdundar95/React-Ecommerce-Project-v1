@@ -1,21 +1,21 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import heroBcg from '../assets/hero-bcg.jpeg';
-import heroBcg2 from '../assets/hero-bcg-2.jpeg';
+import heroBcg from '../assets/hero-bcg.svg';
+import heroBcg2 from '../assets/hero-bcg-2.svg';
 
 const Hero = () => {
   return (
     <Wrapper className='section-center'>
       <article className='content'>
         <h1>
-          design your
+          Where Time Is the
           <br />
-          comfort zone
+          Ultimate Collectible
         </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-          quibusdam optio excepturi ab suscipit eligendi rem reprehenderit dicta
-          incidunt cum.
+          Embark on a time-traveler's dream at AeonArtifacts! Our trove brims
+          with era-defying treasures—quantum quills, chrono compasses, and more.
+          Collect history's quirkiest keepsakes today!
         </p>
         <Link to={'/products'} className='btn hero-btn'>
           shop now
@@ -83,7 +83,7 @@ const Wrapper = styled.section`
       position: absolute;
       width: 10%;
       height: 80%;
-      background: var(--clr-primary-9);
+      background: var(--clr-primary-8);
       bottom: 0%;
       left: -8%;
       border-radius: var(--radius);

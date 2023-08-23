@@ -3,7 +3,7 @@ const Footer = () => {
   return (
     <Wrapper>
       <h5>&copy; {new Date().getFullYear()}</h5>
-      <span> ComfySloth </span>
+      <span> AeonArtifacts </span>
       <h5> All rights reserved </h5>
     </Wrapper>
   );
@@ -18,11 +18,16 @@ const Wrapper = styled.footer`
   background: var(--clr-black);
   text-align: center;
   span {
+    font-family: Kola;
+    font-size: 1.3rem;
     color: var(--clr-primary-5);
   }
   h5 {
+    font-family: Ranade;
     color: var(--clr-white);
     margin: 0.1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 
     font-weight: 400;
     text-transform: none;

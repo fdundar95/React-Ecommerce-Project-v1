@@ -1,6 +1,3 @@
-// Mail (hurteyarde@gufum.com) : https://tempail.com/u/16/hurteyarde-babf6e2f10/
-// Password : L.9Ni~vC,SstGB!
-
 import { useForm, ValidationError } from '@formspree/react';
 import styled from 'styled-components';
 
@@ -23,8 +20,8 @@ const Contact = () => {
         <h3>Join our newsletter and get 20% off</h3>
         <div className='content'>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
-            assumenda magnam ab odio autem non magni commodi vel quas quo.
+            Unlock exclusive offers and embark on a discounted journey through
+            time with our newsletter. Join now for 20% off your first adventure!
           </p>
           <form onSubmit={handleSubmit} className='contact-form'>
             <input

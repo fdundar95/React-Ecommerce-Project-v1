@@ -22,22 +22,22 @@ export const services = [
     id: 1,
     icon: <GiCompass />,
     title: 'mission',
-    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi',
+    text: "Empowering adventurers to embrace history's marvels through imaginative gadgets, sparking curiosity and connections across time.",
   },
   {
     id: 2,
     icon: <GiDiamondHard />,
     title: 'vision',
-    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi',
+    text: "Envisioning a world where time-traveler's toolkit products bridge eras, inspiring joy, wonder, and unity across diverse timelines.",
   },
   {
     id: 3,
     icon: <GiStabbedNote />,
     title: 'history',
-    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi',
+    text: 'AeonArtifacts, born from a love for both history and innovation, brings time-hopping dreams to life since its inception.',
   },
 ];
 
-export const products_url = 'https://course-api.com/react-store-products';
+export const products_url = '/.netlify/functions/products';
 
-export const single_product_url = `https://course-api.com/react-store-single-product?id=`;
+export const single_product_url = `/.netlify/functions/single-product?id=`;

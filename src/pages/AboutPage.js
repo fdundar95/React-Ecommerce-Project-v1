@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { PageHero } from '../components';
-import aboutImg from '../assets/hero-bcg.jpeg';
+import aboutImg from '../assets/hero-bcg.svg';
 
 const AboutPage = () => {
   return (
@@ -14,12 +14,13 @@ const AboutPage = () => {
             <div className='underline'></div>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non maiores
-            voluptatum amet quaerat ipsam magni unde dolorem illum officiis
-            eveniet enim ad odio ut, voluptatibus at et incidunt harum
-            perspiciatis modi repellendus, quisquam sint provident recusandae.
-            Unde eius, quia ab pariatur ullam iure voluptatibus obcaecati
-            provident velit modi sint consectetur?
+            Our story begins with a passion for fusing history's charm with
+            futuristic marvels. AeonArtifacts emerged as a haven where time
+            travel aficionados can explore an array of imaginative gadgets that
+            transcend eras. Each creation is a testament to our commitment to
+            crafting wonders that spark awe and curiosity. Join us on this
+            journey, where every artifact tells a unique tale of innovation and
+            adventure.
           </p>
         </article>
       </Wrapper>
