@@ -32,7 +32,7 @@ AIRTABLE_TABLE=your_airtable_table_id_here
 ```
 Make sure to replace the placeholder values with your own API keys and credentials. Once you have set up the environment variables, restart the development server for the changes to take effect.
 
-![env](https://github.com/fdundar95/React-Ecommerce-Project/assets/79167732/62771dd1-6787-4938-bf8b-e1c1beb2b21b)
+![env](https://github.com/fdundar95/React-Ecommerce-Project-v1/assets/79167732/2943d11b-409f-4bfa-87e9-f85d948b5ed7)
 
 ## Run Locally
 
@@ -46,11 +46,11 @@ Make sure to replace the placeholder values with your own API keys and credentia
 Here are some screenshots of the project:
 
 ### Main Page
-![mainpage](https://github.com/fdundar95/React-Ecommerce-Project/assets/79167732/377d0de7-4990-44ee-afbf-42d72d7ded56)
+![mainpage](https://github.com/fdundar95/React-Ecommerce-Project-v1/assets/79167732/b75504f0-cbfc-4e69-87a2-eae6074d1dcd)
+
 
 ### Airtable
-
-![airtable](https://github.com/fdundar95/React-Ecommerce-Project/assets/79167732/2482d9d5-f8b9-46e4-a10e-aaf5dc693d40)
+![airtable](https://github.com/fdundar95/React-Ecommerce-Project-v1/assets/79167732/415b893b-8a77-48df-9862-c2b42832554b)
 
 ## License
 
