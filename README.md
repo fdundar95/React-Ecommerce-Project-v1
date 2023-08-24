@@ -16,7 +16,7 @@ https://aeon-artifacts.netlify.app/
 - Utilizes **Netlify serverless functions** for fetching data and payment intent.
 - Utilizing **global CSS**, with customizable colors, fonts, and styles.
 - **CSS-in-JS** with `styled-components`, fully responsive.
-- All images are **AI-generated**.
+- All product images are **AI-generated**.
 
 ## Environment Variables
 
