@@ -1,4 +1,4 @@
-# React-Ecommerce-Project
+# React-Ecommerce-Project (Aeon Artifacts)
 
 This is a React.js e-commerce project that showcases a fully functional online store.
 
