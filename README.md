@@ -48,6 +48,8 @@ Here are some screenshots of the project:
 ### Main Page
 ![mainpage](https://github.com/fdundar95/React-Ecommerce-Project-v1/assets/79167732/b75504f0-cbfc-4e69-87a2-eae6074d1dcd)
 
+### Products page
+![products](https://github.com/fdundar95/React-Ecommerce-Project-v1/assets/79167732/45f81b0b-47e7-4a96-932d-6499af5c69ab)
 
 ### Airtable
 ![airtable](https://github.com/fdundar95/React-Ecommerce-Project-v1/assets/79167732/415b893b-8a77-48df-9862-c2b42832554b)
