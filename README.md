@@ -55,3 +55,12 @@ Here are some screenshots of the project:
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for more information.
+
+## Version 2
+
+Currently working on a v2 of this project, which will be a separate and distinct version of this one. Some of the highlights of the new project include:
+
+- Built with **Vite** for faster development and build times.
+- Integration with **Redux Toolkit** for improved state management.
+- Use of **React Query** for efficient data fetching and caching.
+- Adoption of **Tailwind CSS** for rapid UI development.
